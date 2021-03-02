@@ -1,0 +1,9 @@
+node{
+   stage('SCM checkout'){
+      git 'https://github.com/nisvartha/mytest1.0/new/master/RestServices'
+   }
+   stage('Compile-package){
+    sh 'mvn package'
+   }
+  
+}
